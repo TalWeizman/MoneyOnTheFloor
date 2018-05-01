@@ -1,0 +1,54 @@
+<script>
+  import $ from 'jquery';
+
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+
+</script>
+
+<div id="clients" style="background-color:#3498DB;text-align:center;color:white;padding:20px 0px ">
+
+
+  <div class="container">
+    <h1>בין לקוחותיינו</h1>
+    <p>
+      קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן מוסן מנת. להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.
+    </p>
+  </div>
+
+  <br />
+
+  <div class="row" style="text-align:center">
+    <div class="col s3"><div class="avatar z-depth-4 center" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/8/81/Wikimedia-logo.svg')"></div></div>
+    <div class="col s3"><div class="avatar z-depth-4 center" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-5XEmnBH5vqCk_wKcEimr7svkRdEfrwU1OR-LqjdTqqGoq1qI')"></div></div>
+    <div class="col s3"><div class="avatar z-depth-4 center" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJg90VmLtuJo7e4i0okwoVuRMq5Rw-Amc3YxIQ-1gDwNptkPLqA')"></div></div>
+    <div class="col s3"><div class="avatar z-depth-4 center" style="background-image:url('http://brandmark.io/logo-rank/random/mcdonalds.png')"></div></div>
+  </div>
+
+  <br /><br />
+
+  <div class="row" style="margin:0">
+    <a (click)="openModal()" class="waves-effect waves-light btn-large modal-trigger" style="background-color:#DBE2E2;color:#343C49">צפייה בתיק עבודות מלא<i class="material-icons right">work</i></a>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal" style="max-height:85%" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
+    <div class="modal-content" style="height:500px">
+      <h4>Modal Header</h4>
+
+    <app-slider></app-slider>
+
+    </div>
+    <div class="modal-footer">
+      <a class="waves-effect waves-green btn-flat" (click)="closeModal()">Close</a>
+      <a class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+</div>
+
+
+
+

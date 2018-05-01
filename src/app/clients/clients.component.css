@@ -1,0 +1,48 @@
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-color: white;
+  margin-left: 40px;
+}
+
+
+.center {
+  margin: auto;
+}
+
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  border-left: 80px solid green;
+  position:relative;
+  top:-73.5px;
+  right:12px;
+  transform: rotate(-135deg);
+}
+
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+ui-carousel {
+  display: block;
+  margin: 0 auto;
+}
+
+.text {
+  text-align: center;
+  line-height: 300px;
+  font-size: 40px;
+  color: #fff;
+}
+
+

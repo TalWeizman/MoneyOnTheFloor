@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<app-slider></app-slider>
+<app-promo></app-promo>
+
+<div class="row" style="padding:0 40px">
+  <app-card *ngFor="let card of cards" [card]="card"></app-card>
+
+</div>
+
+<app-clients></app-clients>
+
+<app-aboutus></app-aboutus>
+
+<app-contact-us></app-contact-us>
+
+<div class="fixed-action-btn" (click)="toggleChatBox()">
+  <a class="btn-floating btn-large pulse red">
+    <i class="material-icons">chat</i>
+  </a>
+</div>
+
+
+
+<app-chatbox *ngIf="chatActive" (chatClosed)="chatActive=!chatActive"></app-chatbox>
+
+

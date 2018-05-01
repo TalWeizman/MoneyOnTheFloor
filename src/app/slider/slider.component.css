@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+ui-carousel {
+  display: block;
+  margin: 0 auto;
+}
+
+.text {
+  text-align: center;
+  line-height: 300px;
+  font-size: 40px;
+  color: #fff;
+}
